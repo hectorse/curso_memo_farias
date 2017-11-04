@@ -1,0 +1,11 @@
+/* Layout */
+
+section.menu-wrapper    {float: left; width: 20%; background-color: grey;}
+section.posts-wrapper   {float: left; width: 60%; background-color: yellow;}
+section.footer          {float: left; width: 20%; padding-top: 60px;}
+
+/* Theme */
+
+h1        { font-family: Helvetica; color: blue; }
+h2        { font-family: Helvetica; color: red; }
+ul.menu   {list-style: none;}

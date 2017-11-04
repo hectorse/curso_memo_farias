@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Esto es una lista</h1>
+
+    <!-- Lista Ordenada -->
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>Elemento 5</li>
+    </ol>
+
+    <!-- Lista Desordenada -->
+
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>Elemento 5</li>
+    </ul>
+<hr>
+    <!-- Formulario -->
+    <form class="" action="index.html" method="post">
+      <label>Nombre:</label>
+      <input type="text" name="user_name" placeholder="escribe tu nombre aquí">
+
+      <br>
+
+      <label>Correo Electronico:</label>
+      <input type="text" name="user_email" placeholder="escribe tu correo">
+
+      <br>
+
+      <input type="submit" name="submit_button" value="Enviar">
+      <button>Cancelar</button>
+
+      <br>
+
+      <label for="user_subscribe_id">¿Deseas suscribirte a nuestro newsletter?</label>
+      <input type="checkbox" name="user_subscribe" value="1">
+
+      <br>
+
+      <label for="">Acerca de t&iacute;</label>
+      <textarea name="user_description" rows="8" cols="80"></textarea>
+
+      <!-- El Atributo FOR debe de ser el mismo valor del "ID" que queremos manipular -->
+      <!-- Todos los inputs deben de tener un name y un value (El Value puedes hacer un retrieve de la base de datos, en campos en blanco no conviene tanto) -->
+      <label>Colores Favoritos</label>
+      <input type="checkbox" name="selected_colors[]" id="color_red" value="red" /> <label for="color_red">Rojo</label>
+      <input type="checkbox" name="selected_colors[]" id="color_blue" value="blue" /> <label for="color_blue">Azul</label>
+      <input type="checkbox" name="selected_colors[]" id="color_yellow" value="yellow" /> <label for="color_yellow">Amarillo</label>
+      <input type="checkbox" name="selected_colors[]" id="color_orange" value="orange" /> <label for="color_orange">Naranja</label>
+
+      <br>
+
+      <label>G&eacute;nero</label>
+      <select id="user_genre" name="user_genre">
+        <option value=""></option>
+        <option id="user_genre_male" value="male">Hombre</option>
+        <option id="user_genre_female" value="female">Mujer</option>
+      </select>
+
+      <br>
+
+      <label for="">N&uacute;mero Favorito</label>
+      <input type="radio" name="selected_number" id="number_1" value="1"> <label for="number_1">1</label>
+      <input type="radio" name="selected_number" id="number_2" value="2"> <label for="number_2">2</label>
+      <input type="radio" name="selected_number" id="number_3" value="3"> <label for="number_3">3</label>
+      <input type="radio" name="selected_number" id="number_4" value="4"> <label for="number_4">4</label>
+
+    </form>
+    <p>Mi texto.<strong><em><del>Mi texto.Mi texto.</del></em></strong> Mi texto.Mi texto.Mi texto.
+    </p>
+    <iframe src="https://elnorte.com" width="550px" height="500px"></iframe>
+  </body>
+</html>
